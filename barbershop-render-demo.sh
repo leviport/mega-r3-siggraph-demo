@@ -95,6 +95,8 @@ sleep 1
 echo "To exit demo, return to this terminal and kill the process with Ctrl + C"
 echo "Before re-launching the demo, close ALL windows on the workspace below this one."
 echo "If there are any open windows on the next workspace when you launch the demo, strange and undesirable things will happen."
+echo ""
+echo "If ydotool throws \"what(): failed to open uinput device\" errors, run this:  sudo chmod a+rw /dev/uinput"
 sleep 10
 
 # New workspace below
