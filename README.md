@@ -12,6 +12,7 @@ sudo apt install alacritty ydotool ydotoold nvtop btop
 flatpak install --user org.blender.Blender
 ```
 Note: Blender *MUST* be the flatpak version.
+
 3) Make sure user can use uinput
 ```
 sudo chmod a+rw /dev/uinput
@@ -25,3 +26,6 @@ Then this demo should be ready to run!
 - Since ydotool can't handle non en-US keyboard layouts, the system keyboard layout *MUST* be set to en-US.
 - As mentioned above, I have seen "what(): failed to open uinput device" errors appear between some reboots. I'm not sure why those permissions weren't preserved, but running `sudo chmod a+rw /dev/uinput` again fixed it and made the demo run normally again.
 - I've seen COSMIC DE get into a strange state after running this for a while, which has broken the demo. A reboot was required to fix it, so that may be necessary at the show as well.
+
+## Credits:
+- Python script that enables GPUs was borrowed from https://blender.stackexchange.com/questions/156503/rendering-on-command-line-with-gpu
